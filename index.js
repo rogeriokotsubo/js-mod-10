@@ -7,9 +7,6 @@ let produto = {};
 let id = 0;
 let idSel = 0;
 let newProduct = 1;
-let valor = 0;
-let nome = '';
-let descricao = '';
 
 function Save() {
   valor = parseFloat(document.querySelector('#value').value.replace(",", "."));
@@ -59,7 +56,6 @@ function Save() {
     return false;
   }
 }  
-
 
 function CheckValues(){
   if (isNaN(valor)){
@@ -178,7 +174,6 @@ function Show(Id){
   
   document.querySelector('#ctn-details').style.display = 'block';
 }
-
 
 function Cancel(){
   newProduct = 1;
