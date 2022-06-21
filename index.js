@@ -134,12 +134,7 @@ function Delete(Id){
     }  
     i += 1;
   } 
-  produtos = [];
-  i = 0;
-  while (i < produtosTmp.length){
-    produtos.push(produtosTmp[i]);
-    i += 1;
-  } 
+  produtos = produtosTmp;
   Cancel();
   List();
 }
